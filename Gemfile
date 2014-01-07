@@ -12,6 +12,8 @@ gem 'haml-rails'
 gem 'pg'
 gem 'simple_form'
 gem 'thin'
+gem 'countries', require: 'iso3166'
+gem 'country_select'
 
 group :development do
   gem 'better_errors'

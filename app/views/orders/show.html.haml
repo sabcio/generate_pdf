@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Payer name:
+  = @order.payer_name
+%p
+  %b Address:
+  = simple_format(@order.address)
+%p
+  %b Tax:
+  = @order.tax_id
+%p
+  %b Country:
+  = @order.country
+%p
+  %b Email:
+  = @order.email
+
+= link_to 'Edit', edit_order_path(@order)
+\|
+= link_to 'Back', orders_path
