@@ -30,16 +30,7 @@ img {
   @extend .btn-primary;
   @extend .btn-lg;
   }
-// apply styles to HTML elements
-// to make views framework-neutral
-main {
-  @extend .container;
-  background-color: #eee;
-  padding-bottom: 80px;
-  width: 100%;
-  margin-top: 51px; // accommodate the navbar
-  }
-section {
-  @extend .row;
-  margin-top: 20px;
-  }
+
+body{
+  padding-top: 20px
+}
