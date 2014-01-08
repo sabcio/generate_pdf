@@ -5,6 +5,10 @@ body{
   padding-top: 20px
 }
 
+.control-group{
+  @extend .form-group
+}
+
 .btn{
   margin: 10px 0
 }

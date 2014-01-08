@@ -15,6 +15,12 @@
 %p
   %b Email:
   = @order.email
+- if @order.items
+  %p
+    %b Items:
+    %ul
+      - @order.items.each do |item|
+        %li= item.name
 
 = link_to 'Edit', edit_order_path(@order)
 \|
