@@ -1,8 +1,12 @@
 = simple_form_for(@order) do |f|
-  = f.input :payer_name
-  = f.input :address
-  = f.input :tax_id
-  = f.input :country
-  = f.input :email
-
-  = f.button :submit, class: 'btn-success'
+  .row
+    .col-md-6
+      = f.input :payer_name
+      = f.input :address
+      = f.input :tax_id
+      = f.input :country
+      = f.input :email
+    .col-md-6
+      = f.association :items, as: :check_boxes
+  .row
+    = f.button :submit, class: 'btn-success'

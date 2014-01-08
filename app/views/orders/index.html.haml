@@ -7,6 +7,7 @@
     %th Tax
     %th Country
     %th Email
+    %th Items
     %th
     %th
     %th
@@ -18,6 +19,7 @@
       %td= order.tax_id
       %td= order.country
       %td= order.email
+      %td= order.items.count
       %td= link_to 'Show', order
       %td= link_to 'Edit', edit_order_path(order)
       %td= link_to 'Destroy', order, :method => :delete, :data => { :confirm => 'Are you sure?' }
