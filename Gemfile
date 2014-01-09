@@ -14,6 +14,7 @@ gem 'simple_form'
 gem 'thin'
 gem 'countries', require: 'iso3166'
 gem 'country_select'
+gem 'shelly-dependencies'
 
 group :development do
   gem 'better_errors'
