@@ -1,0 +1,22 @@
+%p
+  %b Payer name:
+  = @order.payer_name
+%p
+  %b Address:
+  = simple_format(@order.address)
+%p
+  %b Tax:
+  = @order.tax_id
+%p
+  %b Country:
+  = @order.country
+%p
+  %b Email:
+  = @order.email
+- if @order.items
+  %p
+    %b Items:
+    %ul
+      - @order.items.each do |item|
+        %li= item.name
+

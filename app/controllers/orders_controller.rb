@@ -10,6 +10,14 @@ class OrdersController < ApplicationController
   # GET /orders/1
   # GET /orders/1.json
   def show
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: @order.payer_name,
+               layout: 'layouts/application.pdf.haml',
+               show_as_html: params[:debug].present?
+      end
+    end
   end
 
   # GET /orders/new
