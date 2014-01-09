@@ -15,6 +15,8 @@ gem 'thin'
 gem 'countries', require: 'iso3166'
 gem 'country_select'
 gem 'shelly-dependencies'
+gem 'wkhtmltopdf-binary'
+gem 'wicked_pdf'
 
 group :development do
   gem 'better_errors'
